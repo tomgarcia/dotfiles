@@ -13,11 +13,7 @@ promptinit
 prompt redhat
 PROMPT='[%n@%M %~]%(!.#.$) '
 
-source antigen/antigen.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-antigen bundle sindresorhus/pure
-antigen bundle Tarrasch/zsh-bd
 
 export PAGER='vimpager'
 export EDITOR='vim'
@@ -27,6 +23,7 @@ alias tmux="tmux -2"
 alias ls='ls --color=auto'
 alias la='ls -a'
 alias ll='ls -la'
+alias lh='ll -h'
 alias vi='vim'
 alias less=$PAGER
 
