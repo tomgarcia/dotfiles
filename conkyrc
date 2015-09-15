@@ -1,0 +1,27 @@
+#Sets up conky for statusbar output
+out_to_x no
+out_to_console yes
+own_window no
+background no
+max_text_width 0
+
+#Sets conky to run indefinitely, and update every second
+total_run_times 0
+update_interval 1.0
+
+short_units yes
+if_up_strictness address
+use_spacer left
+cpu_avg_samples 0
+override_utf8_locale no
+
+TEXT
+[{ "full_text": "Uptime: $uptime_short", "color": "\fffffff"},
+ ${if_up eno1}{ "full_text": "E: ${addr eno1}", "color": "\fffffff"},${endif}
+ ${if_up wlp3s0b1}{ "full_text": "W: ${addr wlp3s0b1} ${wireless_essid wlp3s0b1} (${wireless_mode wlp3s0b1}) ${wireless_link_qual_perc wlp3s0b1}% (${wireless_bitrate wlp3s0b1}) ", "color": "\fffffff"},${endif}
+ { "full_text": "CPU: ${cpu cpu0}%", "color": "\fffffff"},
+ { "full_text": "RAM: ${memperc}%", "color": ${if_match ${memperc}<90} "\fffffff" ${else} "\ff0000" ${endif} },
+ { "full_text": "Disk: ${fs_free /} (${fs_free_perc /}%)", "color": "\fffffff" },
+ {"full_text": "Volume: ${exec amixer get Master -M | grep -oE "[[:digit:]]*%"}${if_match "${exec amixer get Master -M | grep -oE "off"}"=="off"} (muted) ${endif}", "color": "\fffffff" },
+ { "full_text": "$battery ${if_match "${battery_time}"!=""}($battery_time)${endif}", "color": ${if_match ${battery_percent}>10}"\fffffff"${else}"\ff0000"${endif}},
+ { "full_text": "${time %m-%d-%y %H:%M:%S}", "color": "\fffffff" }],

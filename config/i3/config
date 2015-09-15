@@ -177,7 +177,7 @@ exec xrandr --output VGA1 --auto --below LVDS1
 # Start i3bar to display a workspace bar (plus the system information conky
 # finds out, if available)
 bar {
-        status_command $HOME/scripts/conky-i3bar
+        status_command $HOME/dotfiles/conky-i3bar
 }
 
 #Hides Mouse when not in use

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#Tells i3bar that the script returns JSON
+echo '{"version": 1}'
+
+#Starts the list
+echo '['
+echo '[],'
+
+#Runs my conky script
+exec conky -c $HOME/dotfiles/conkyrc
