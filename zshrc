@@ -10,7 +10,7 @@ unsetopt extendedglob
 bindkey -e
 zstyle :compinstall filename '/home/thomas/.zshrc'
 
-autoload -Uz compinit promptinit
+autoload -Uz compinit promptinit zcalc
 compinit
 promptinit
 prompt redhat
