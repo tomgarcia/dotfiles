@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/thomas/zfs-repos/kot-zfs/module/zfs'
+let g:netrw_dirhist_2='/home/thomas/zfs-repos/my-zfs'
+let g:netrw_dirhist_3='/home/thomas/zfs-repos/checksum-zfs/lib/libspl/asm-x86_64'
+let g:netrw_dirhist_4='/home/thomas/zfs-repos/checksum-zfs/module/zfs/asm-x86_64'
+let g:netrw_dirhist_5='/home/thomas/zfs-repos/checksum-zfs/include/asm-x86_64'
+let g:netrw_dirhist_6='/usr/lib/modules/4.1.6-1-ARCH'
+let g:netrw_dirhist_7='/home/thomas/neovim/.deps/usr/lib/luarocks/rocks/nvim-client'
+let g:netrw_dirhist_8='/home/thomas/zfs-repos/ryao-zfs/include/sys'
+let g:netrw_dirhist_9='/home/thomas/.config/i3status'
