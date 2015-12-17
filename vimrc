@@ -11,3 +11,4 @@ set background=dark
 colorscheme solarized
 set t_Co=256
 let g:solarized_termcolors=256
+set nohlsearch
