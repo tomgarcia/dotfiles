@@ -16,7 +16,7 @@ promptinit
 prompt redhat
 PROMPT='[%n@%M %~]%(!.#.$) '
 
-export PAGER='vimpager'
+#export PAGER='vimpager'
 export EDITOR='vim'
 export TERM="screen-256color"
 

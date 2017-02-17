@@ -58,10 +58,11 @@ urxvt*color14:                 S_base1
 urxvt*color15:                 S_base3
 
 !Fonts
-*font: xft:DejaVuSans:size=12:antialias=true:hinting=true
 urxvt*font: xft:Inconsolata:size=12:antialias=true:hinting=true
+!font: xft:DejaVuSans:size=12:antialias=true:hinting=true
 
 !urxvt settings
 URxvt.perl-ext-common: default,matcher
 URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
+URxvt*iso14755:False
